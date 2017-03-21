@@ -1,2 +1,2 @@
 # plg_system_slabtext
-Joomla plugin to load the slabText jQuery plugin
+What I use to load the slabText JavaScript plugin in Joomla
