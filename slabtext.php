@@ -5,6 +5,9 @@
  *
  * @copyright   Copyright (C) 2015 Sergio Manzi.
  * @license     GNU General Public License version 2 or later
+ *
+ * For info/copyright/license about the slabText jquery plugin, please see: https://github.com/freqdec/slabText
+ *
  */
 
 defined('_JEXEC') or die;
@@ -32,27 +35,27 @@ class plgSystemSlabtext extends JPlugin
 			$fontRatio = trim($this->params->get('fontRatio', '0.78'));
 			$forceNewCharCount = $this->params->get('forceNewCharCount', '1');
 			$wrapAmpersand = $this->params->get('wrapAmpersand', '1');
-			$headerBreakpoint = trim($this->params->get('headerBreakpoint', ''));
-			$viewportBreakpoint = trim($this->params->get('viewportBreakpoint', ''));
+			$headerBreakpoint = trim($this->params->get('headerBreakpoint', '0'));
+			$viewportBreakpoint = trim($this->params->get('viewportBreakpoint', '0'));
 			$noResizeEvent = $this->params->get('noResizeEvent', '1');
 			$resizeThrottleTime = trim($this->params->get('resizeThrottleTime', '300'));
 			$maxFontSize = trim($this->params->get('maxFontSize', '999'));
 			$postTweak = $this->params->get('postTweak', '1');
 			$precision = trim($this->params->get('precision', '3'));
-			$minCharsPerLine = trim($this->params->get('minCharsPerLine', ''));
+			$minCharsPerLine = trim($this->params->get('minCharsPerLine', '0'));
 
 			$options = array();
 			if ($fontRatio != '0.78') $options[] = "\t\t\"fontRatio\": $fontRatio";
 			if ($forceNewCharCount != '1') $options[] = "\t\t\"forceNewCharCount\": false";
 			if ($wrapAmpersand != '1') $options[] = "\t\t\"wrapAmpersand\": false";
-			if ($headerBreakpoint != '') $options[] = "\t\t\"headerBreakpoint\": $headerBreakpoint";
-			if ($viewportBreakpoint != '') $options[] = "\t\t\"viewportBreakpoint\": $viewportBreakpoint";
+			if ($headerBreakpoint != '0' && $headerBreakpoint != '') $options[] = "\t\t\"headerBreakpoint\": $headerBreakpoint";
+			if ($viewportBreakpoint != '0' && $viewportBreakpoint != '') $options[] = "\t\t\"viewportBreakpoint\": $viewportBreakpoint";
 			if ($noResizeEvent != '0') $options[] = "\t\t\"noResizeEvent\": true";
 			if ($resizeThrottleTime != '300') $options[] = "\t\t\"resizeThrottleTime\": $resizeThrottleTime";
 			if ($maxFontSize != '999') $options[] = "\t\t\"maxFontSize\": $maxFontSize";
 			if ($postTweak != '1') $options[] = "\t\t\"postTweak\": false";
 			if ($precision != '3') $options[] = "\t\t\"precision\": $precision";
-			if ($minCharsPerLine != '') $options[] = "\t\t\"minCharsPerLine\": $minCharsPerLine";
+			if ($minCharsPerLine != '0' && $minCharsPerLine != '') $options[] = "\t\t\"minCharsPerLine\": $minCharsPerLine";
 			$opts = implode(",\n", $options);
 
 

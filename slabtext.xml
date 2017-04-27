@@ -2,12 +2,12 @@
 <extension version="2.5" type="plugin" group="system" method="upgrade">
 	<name>PLG_SYSTEM_SLABTEXT</name>
 	<author>Sergio Manzi</author>
-	<creationDate>July 2015</creationDate>
+	<creationDate>April 2016</creationDate>
 	<copyright>Sergio Manzi</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>info@smz.it</authorEmail>
 	<authorUrl>smz.it</authorUrl>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description>PLG_SYSTEM_SLABTEXT_DESC</description>
 	<files>
 		<filename plugin="slabtext">slabtext.php</filename>
@@ -32,20 +32,20 @@
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				<field name="headerBreakpoint" type="text" label="PLG_SYSTEM_SLABTEXT_FIELD_HEADERBREAKPOINT" description="PLG_SYSTEM_SLABTEXT_FIELD_HEADERBREAKPOINT_DESC" />
-				<field name="viewportBreakpoint" type="text" label="PLG_SYSTEM_SLABTEXT_FIELD_VIEWPORTBREAKPOINT" description="PLG_SYSTEM_SLABTEXT_FIELD_VIEWPORTBREAKPOINT_DESC" />
+				<field name="headerBreakpoint" type="number" default="0" label="PLG_SYSTEM_SLABTEXT_FIELD_HEADERBREAKPOINT" description="PLG_SYSTEM_SLABTEXT_FIELD_HEADERBREAKPOINT_DESC" />
+				<field name="viewportBreakpoint" type="number" default="0" label="PLG_SYSTEM_SLABTEXT_FIELD_VIEWPORTBREAKPOINT" description="PLG_SYSTEM_SLABTEXT_FIELD_VIEWPORTBREAKPOINT_DESC" />
 				<field name="noResizeEvent" type="radio" class="btn-group" default="0" label="PLG_SYSTEM_SLABTEXT_FIELD_NORESIZEEVENT" description="PLG_SYSTEM_SLABTEXT_FIELD_NORESIZEEVENT_DESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				<field name="resizeThrottleTime" type="text" default="300" label="PLG_SYSTEM_SLABTEXT_FIELD_RESIZETHROTTLETIME" description="PLG_SYSTEM_SLABTEXT_FIELD_RESIZETHROTTLETIME_DESC" />
-				<field name="maxFontSize" type="text" default="999" label="PLG_SYSTEM_SLABTEXT_FIELD_MAXFONTSIZE" description="PLG_SYSTEM_SLABTEXT_FIELD_MAXFONTSIZE_DESC" />
+				<field name="resizeThrottleTime" type="number" default="300" label="PLG_SYSTEM_SLABTEXT_FIELD_RESIZETHROTTLETIME" description="PLG_SYSTEM_SLABTEXT_FIELD_RESIZETHROTTLETIME_DESC" />
+				<field name="maxFontSize" type="number" default="999" label="PLG_SYSTEM_SLABTEXT_FIELD_MAXFONTSIZE" description="PLG_SYSTEM_SLABTEXT_FIELD_MAXFONTSIZE_DESC" />
 				<field name="postTweak" type="radio" class="btn-group" default="1" label="PLG_SYSTEM_SLABTEXT_FIELD_POSTTWEAK" description="PLG_SYSTEM_SLABTEXT_FIELD_POSTTWEAK_DESC">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
-				<field name="precision" type="text" default="3" label="PLG_SYSTEM_SLABTEXT_FIELD_PRECISION" description="PLG_SYSTEM_SLABTEXT_FIELD_PRECISION_DESC" />
-				<field name="minCharsPerLine" type="text" label="PLG_SYSTEM_SLABTEXT_FIELD_MINCHARSPERLINE" description="PLG_SYSTEM_SLABTEXT_FIELD_MINCHARSPERLINE_DESC" />
+				<field name="precision" type="number" default="3" label="PLG_SYSTEM_SLABTEXT_FIELD_PRECISION" description="PLG_SYSTEM_SLABTEXT_FIELD_PRECISION_DESC" />
+				<field name="minCharsPerLine" type="number" default="0" label="PLG_SYSTEM_SLABTEXT_FIELD_MINCHARSPERLINE" description="PLG_SYSTEM_SLABTEXT_FIELD_MINCHARSPERLINE_DESC" />
 			</fieldset>
 		</fields>
 	</config>
