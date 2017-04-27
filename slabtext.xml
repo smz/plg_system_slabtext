@@ -7,7 +7,7 @@
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<authorEmail>info@smz.it</authorEmail>
 	<authorUrl>smz.it</authorUrl>
-	<version>1.1.0</version>
+	<version>1.1.1</version>
 	<description>PLG_SYSTEM_SLABTEXT_DESC</description>
 	<files>
 		<filename plugin="slabtext">slabtext.php</filename>
